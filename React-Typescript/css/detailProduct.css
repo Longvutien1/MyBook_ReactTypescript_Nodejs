@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --green: #27ae60;
+  --dark-color: #219150;
+  --black: #444;
+  --line-color:#666;
+  --border: .05rem solid rgba(0,0,0,.1);
+  --border-hover: .05rem solid var(--black);
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+
+
+.container_detail{
+    display: flex;
+    flex-wrap: wrap;
+     /* flex flex-wrap ; */
+    
+}
+.image-detail{
+    flex: 1 2 11rem;
+}
+.image-detail .mini{
+    display: flex;
+    gap: 8
+    /* @apply flex gap-2; */
+}
+.product-information{
+    margin: 16px 0;
+    /* @apply my-4; */
+    flex: 1 2 35rem;
+}
+.product-information .price_now{
+    padding: 16px 0;
+    font-size: 18px;
+    /* @apply py-4 text-4xl; */
+    color:var(--green) ;
+}
+.product-information .price_now .price_old{
+    color:var(--line-color) ;
+    font-size: 15px;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.product-information .stars i{
+  
+    color:var(--green) ;
+}
+
+.product-information .quantity {
+    /* @apply py-4 my-4; */
+    border-top: 1px solid var(--line-color);
+    padding: 16px 0;
+    margin: 16px 0;
+}
+
+.product-information .quantity input{
+    border: var(--border);
+    width: 15%;
+    /* @apply w-2/12 ; */
+}
+
+.product-information .buttons{
+    /* @apply flex gap-4 flex-wrap mt-4; */
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  
+  .product-information .buttons a{
+    @apply p-2.5 px-8 text-base ;
+    padding: 10px 32px;
+    color:#444;
+    
+  }
+  
+  
+  .product-information .buttons a.cart{
+    border:.05rem solid var(--dark-color);
+    background: var(--green);
+    color:#fff;
+  }
+  
+  .product-information .buttons a.buy{
+    border:.05rem solid var(--black);
+   
+    color:var(--black);
+   
+  }
+  
+  .product-information .buttons a.cart:hover{
+    background: var(--dark-color);
+  }
+  
+  .product-information .buttons a.buy:hover{
+    border:.05rem solid  var(--dark-color);
+    background: var(--dark-color);
+    color:#fff;
+  }
+  
+  .detailProduct section{
+    padding:7rem 9rem;
+  }
+
+  /* -------------------commen start------------ */
+  
+  .comment .title{
+    @apply text-2xl font-bold mb-2  ;
+   font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+  .comment .content{
+      padding: 16px 0;
+    /* @apply py-4 */
+  }
+  .comment .content .info{
+      display: flex;
+      gap:16px;
+      align-items: center
+    /* @apply flex gap-4 items-center ; */
+  }
+  .comment .content .info div p{
+      font-weight: 500;
+    /* @apply font-semibold ; */
+  }
+  .comment .content .info a img{
+    border-radius: 50%;
+  }
+
+  .comment .content .info .stars i{
+    color: var(--green);
+    @apply text-sm;
+    font-size: 14px;
+  }
+
+ 

@@ -1,0 +1,272 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --green: #27ae60;
+  --dark-color: #219150;
+  --black: #444;
+  --hr: #ddd;
+  --line-color:#666;
+  --border: .05rem solid rgba(0,0,0,.1);
+  --border-hover: .05rem solid var(--black);
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+
+
+.cart h1{
+  font-size: 20px;
+  margin: 32px 0;
+  font-weight: 600;
+
+    /* @apply text-3xl my-8 font-bold; */
+
+}
+.cart .container-cart {
+  padding: 0 9%;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 48px;
+    @apply grid grid-cols-12 gap-16;
+}
+
+.cart .container-cart .list_product  {
+    border-top: 1px solid var(--hr);
+    
+}
+
+.cart .container-cart .list_product .product_cart  {
+    border-bottom: 1px solid var(--hr);
+    display: flex;
+    gap: 16px;
+    padding: 32px 0;
+    width: 100%;
+    position: relative;
+    /* @apply  flex gap-4 py-8  w-full relative; */
+}
+
+
+.cart .container-cart .list_product .product_cart  .info-product{  
+  /* @apply  grid grid-cols-2 gap-4  w-full ; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+.cart .container-cart .list_product .info-product .name{
+    /* @apply text-xl font-bold; */
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart .container-cart .list_product .info-product .price{ 
+    /* @apply text-lg py-2; */
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.cart .container-cart .list_product .product_cart .del{ 
+    @apply absolute top-0 right-0 mt-8 text-xl font-normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* margin-top: 16px; */
+    font-size: 18px;
+    padding: 5px 7px;
+    padding: 0;
+    margin-top: 0;
+}
+
+.cart .container-cart .list_product .product_cart .del:hover{
+    transform: rotate(90deg);
+    color: var(--green)
+}
+
+.cart .container-cart .list_product .info-product span{
+   border: 1px solid var(--black);
+   border-radius: 1rem; 
+    padding: 10px 15px;
+    margin: 0 10px;
+   /* @apply p-1 px-2 */
+}
+
+
+
+.cart .container-cart .order {
+    /* @apply col-span-5 p-8 h-full; */
+    padding: 32px ;
+    height: 100%;
+    background: #F8F9FA;
+    border-radius: 10px
+    
+}
+
+.cart .container-cart .order h2{
+    /* @apply font-semibold text-xl; */
+    font-weight: 600;
+    font-size: 18px;
+   
+}
+
+.dl_don_hang{
+    /* @apply flex justify-between py-2; */
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid var(--hr);
+}
+
+.don_hang .btn_thanh_toan{
+    background-color: var(--green);
+    /* @apply w-full py-2 text-white; */
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px 0;
+    color: #fff;
+   
+}
+
+
+.formThanhToan{
+    @apply fixed top-0 hidden left-0 w-full  items-center justify-center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    min-height: 100vh;
+    background: rgba(0,0,0,.8);
+  
+  }
+  .formThanhToan.active{
+    display: inline-block;
+  
+  }
+  .formThanhToan .preview{
+    @apply  p-6 text-left hidden  bg-white relative m-auto  z-50;
+    padding: 32px;
+    text-align: left;
+    display: none;
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    z-index: 50;
+    width: 27%;
+    transform: translateY(15%);
+  }
+  
+  .formThanhToan.active .preview{
+    display: block;
+    
+  }
+  
+  .formThanhToan .preview input{
+    border: 1px solid #219150;
+    @apply w-full px-2 py-1 rounded-md;
+    width: 100%;
+    padding: 4px 8px;
+    
+    margin: 5px 0;
+  }
+  
+  .formThanhToan .preview .fa-times{
+    @apply absolute top-4 right-6 cursor-pointer text-3xl;
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    cursor: pointer;
+    font-size: 20px;
+    color:var(--green);
+   
+  }
+  
+  .formThanhToan .preview .fa-times:hover{
+    transform: rotate(90deg);
+  }
+  
+  .formThanhToan .preview h3{
+    @apply text-2xl py-2;
+    font-size: 18px;
+    /* padding: 4px 0; */
+    color:var(--black);
+   
+  }
+  
+  
+  .formThanhToan .preview p{
+    @apply mt-2 text-base text-left;
+    line-height: 1.5;
+    /* margin-top: 8px; */
+    margin: 8px 0 0 0 ;
+    /* padding: 0; */
+    color:var(--line-color);
+  }
+  
+  .formThanhToan .preview .price{
+    @apply py-2 text-2xl;
+    padding: 8px;
+    font-size: 18px;
+    color:var(--green);
+  }
+  
+  .formThanhToan .preview .buttons{
+    @apply flex gap-4 flex-wrap mt-4;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    /* padding: 4px 0; */
+  
+  }
+  
+  .formThanhToan .preview .buttons button{
+    @apply p-2.5 text-base ;
+    padding: 8px;
+    flex:1 1;
+    color:#444;
+    
+  }
+  
+  .formThanhToan .preview .buttons button.cart{
+    border:.05rem solid var(--dark-color);
+    background: var(--green);
+    color:#fff;
+  }
+  
+  .formThanhToan .preview .buttons button.buy{
+    border:.05rem solid var(--black);
+   
+    color:var(--black);
+   
+  }
+  
+  .formThanhToan .preview .buttons button.cart:hover{
+    background: var(--dark-color);
+  }
+  
+  .formThanhToan .preview .buttons button.buy:hover{
+    border:.05rem solid  var(--dark-color);
+    background: var(--dark-color);
+    color:#fff;
+  }
+  .error{
+      color: red;
+  }

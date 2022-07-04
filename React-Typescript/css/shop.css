@@ -1,0 +1,149 @@
+.btn_search:hover{
+    background-color: #27ae60;
+    color: #27ae60;
+}
+
+
+.container-shop{
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  grid-gap: 30px;
+  padding: 1.5rem 9%;
+}
+ul{
+  padding: 0;
+  margin: 0;
+
+}
+ul li{
+  display: block
+}
+
+.product-shop .box{
+    @apply  relative overflow-hidden text-center;
+    border: var(--border);
+  }
+  
+  .product-shop .box:hover{
+    border:  var(--border-hover) ;
+  }
+  
+  .product-shop .box .image{
+   padding: 1rem;
+    background: linear-gradient(15deg, #eee 30%, #fff 31%);
+  }
+  
+  
+  .product-shop .box:hover .image{
+    transform: translateY(3rem);
+    z-index: 1;
+  }
+  .product-shop .box:hover .image img{
+   
+    z-index: 1;
+  
+  }
+  .product-shop .box .image img{
+    height: 15rem;
+    margin: auto;
+  }
+  
+  .product-shop .box .icons{
+    @apply absolute top-0 left-0 right-0 bg-white z-10;
+    transform: translateY(-105%);
+    border-bottom: var(--border-hover);
+  }
+  
+  .product-shop .box:hover .icons{
+    transform: translateY(0%);
+  }
+  
+  .product-shop .box .icons a{
+    color: var(--black);
+    @apply text-lg py-3 px-5
+  }
+  
+  .product-shop .box .icons a:hover{
+    background: var(--green);
+    color: #fff;
+  }
+  
+  .product-shop .box .content{
+    background:#eee;
+    padding:1.5rem;
+    z-index: 10000;
+  }
+  
+  .product-shop .box .content h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--black);
+  }
+  
+  .product-shop .box .content .price{
+    @apply text-lg  font-bold my-2;
+  
+    color:var(--black);
+  }
+  .product-shop .box .content .btn{
+    @apply text-lg  px-4 py-1 text-white;
+    border: 1px solid var(--green);
+    
+    background: var(--green);
+    border-radius: 8px
+  }
+  
+  .product-shop .box .content .price span{
+    @apply text-sm ;
+    color:var(--light-color);
+    font-weight: 500;
+    text-decoration: line-through;
+   
+  }
+
+  .btn{
+    cursor: pointer;
+  }
+   .number-page{
+    display: flex;
+  }
+  .page ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  .page ul li{
+   width: 30px;
+   height: 30px;
+   border-radius: 3px;
+   border: 1px solid gray;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 15px;
+   cursor: pointer;
+}
+
+.page ul li a{
+    color:black;
+}
+
+.btn-active{
+    color: #c6c9cc;
+    border: solid 1px #c6c9cc !important;
+}
+
+.number-page .active{
+    background: #27ae60;
+    border: 1px solid #27ae60;
+}
+
+.number-page .active a{
+    color: white;
+}
+
+
+.category a li:hover{
+  background-color: #27ae60;
+ 
+}

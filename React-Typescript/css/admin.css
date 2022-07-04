@@ -1,0 +1,47 @@
+.ant-layout header .logo {
+   float: left;
+   width: 120px;
+   height: 31px;
+   /* margin: 16px 24px 16px 0; */
+   /* background: url(../image/pic-3.png) no-repeat  center; */
+   font-size: 17px;
+ }
+ .ant-layout .logo {
+   /* float: right; */
+   /* margin: 16px 0 16px 24px; */
+ }
+ 
+ .site-layout-background {
+   background: #fff;
+   
+ }
+
+ section{
+   padding: 0
+}
+.btnAdmin{
+  padding: 5px 15px;
+  background-color: #001529;
+  
+  margin: 10px 0;
+}
+.btnAdmin a{
+  color: #fff;
+}
+.don_hang2{
+  /* border: 2px solid #3f3f3f; */
+   box-shadow: 3px 3px 4px 4px #b8b4b4;
+}
+
+.btn_thanh_toan2{
+  padding: 5px 10px;
+  background-color:#27ae60 ;
+  color: #fff;
+  transition: all ease-in-out 0.2s;
+  float: right;
+}
+.btn_thanh_toan2:hover{
+  /* box-shadow: 1px 1px 2px 2px #b8b4b4; */
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+}

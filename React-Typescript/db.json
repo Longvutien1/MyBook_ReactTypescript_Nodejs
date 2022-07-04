@@ -1,0 +1,118 @@
+{
+  "products": [
+    {
+      "name": "Nguyễn Văn Hữu23 ",
+      "price": "1212",
+      "id": 15
+    },
+    {
+      "name": "Vu Tien Long (PH14046)",
+      "price": "111",
+      "id": 17
+    },
+    {
+      "name": "Sản phẩm mới nhất 122",
+      "price": "1112222",
+      "id": 18
+    },
+    {
+      "name": "Vũ Tiến Long",
+      "price": "1212",
+      "id": 32
+    },
+    {
+      "name": "Nguyễn Văn Hữu",
+      "price": "1212",
+      "id": 33
+    },
+    {
+      "name": "Vũ Tiến Long",
+      "price": "111",
+      "id": 34
+    },
+    {
+      "name": "Nguyễn Văn Hữu",
+      "price": "111",
+      "id": 35
+    },
+    {
+      "name": "Iphone 11",
+      "price": "111",
+      "id": 36
+    },
+    {
+      "name": "Iphone 11",
+      "price": "112",
+      "id": 37
+    },
+    {
+      "name": "fefef",
+      "price": "1212",
+      "id": 38
+    },
+    {
+      "name": "Iphone 11",
+      "price": "333",
+      "id": 39
+    },
+    {
+      "name": "san p 331",
+      "price": "55555",
+      "id": 40
+    },
+    {
+      "name": "sp 331 ",
+      "price": "4444",
+      "id": 41
+    },
+    {
+      "name": "product long add new",
+      "price": "1212",
+      "id": 42
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "long vt",
+      "email": "long@gmail.com",
+      "password": "123123",
+      "role": "1"
+    },
+    {
+      "email": "dat@gmail.com",
+      "password": "$2a$10$RQGxtuwQSApPQ6ll/Vo4.OwNNBOqxTb/ERznLZZZrAIH9H/9gmVJa",
+      "username": "datlt1212 long",
+      "role": "2",
+      "id": 20
+    },
+    {
+      "id": 21,
+      "username": "longvtph14046",
+      "email": "tllong20002@gmail.com",
+      "role": "2",
+      "password": "$2a$10$Y4FBRBntRtKmccFVv8BUMejr.E9Sy3c6bVodjTjVo5GYvCpV8pBrW"
+    },
+    {
+      "id": 22,
+      "username": "longvt 222",
+      "email": "tllong20002@gmail.com.vn",
+      "role": "2",
+      "password": "$2a$10$S9KRI1jXu97cMHPpq0L.t.35wgfPx3uvIpf41uLmk8dxS.K4SoIRy"
+    },
+    {
+      "email": "longvt@gmail.com",
+      "password": "$2a$10$E7Kn0Moq18J0wIloKvO9seclHCjnkLuq4w1pQPssZWwBTWSTRiGiW",
+      "username": "Long 29 03 112212",
+      "role": "2",
+      "id": 23
+    },
+    {
+      "id": 24,
+      "username": "longvt 12222",
+      "email": "tllong20002@gmail.com.vnn",
+      "role": "1",
+      "password": "$2a$10$3Yh4SuMMpUgBNhv3NjaCee74uCddfdOSMWAJyzbYM7Fws3xjONTNO"
+    }
+  ]
+}
