@@ -41,6 +41,7 @@ const userSchema = new mongoose.Schema({
         default: "0"
     }
 }, {timestamps: true})
+
 userSchema.methods = {
 
     // check password in login

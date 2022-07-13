@@ -11,7 +11,7 @@ export const signUp = async (req, res) => {
                 message:"User đã tồn tại"
             })
         }
-        const user = await  ({email, password, username}).save()
+        const user = await  User({email, password, username}).save()
         res.json({
             user:{
                 _id:user._id,

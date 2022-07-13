@@ -10,6 +10,8 @@ export const uploadImg = async (imgPost:any) => {
     let imgLink = "";
 
     const file =  imgPost?.files[0];
+    console.log(file);
+    
         if (file) {
           const formData = new FormData();
           formData.append("file", file);

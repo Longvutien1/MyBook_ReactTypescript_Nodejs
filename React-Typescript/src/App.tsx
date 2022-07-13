@@ -178,7 +178,7 @@ function App() {
       password: user.password,
       phone:user.phone,
       address: user.address,
-      img: user.img[0].name,
+      img: user.img[0]?.name,
       sex:user.sex
   });
     // const {data} = await updateUser();

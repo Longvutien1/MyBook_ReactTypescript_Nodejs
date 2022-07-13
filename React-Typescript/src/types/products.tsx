@@ -20,7 +20,7 @@ export type UserType = {
     password?: string | number,
     phone?:string,
     address?:string,
-    img?:string,
+    img?:any,
     role?: string,
     sex?:number
 }
